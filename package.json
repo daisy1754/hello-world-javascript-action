@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/daisy1754/hello-world-javascript-action/issues"
   },
-  "homepage": "https://github.com/daisy1754/hello-world-javascript-action#readme"
+  "homepage": "https://github.com/daisy1754/hello-world-javascript-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
 }
