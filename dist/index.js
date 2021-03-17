@@ -20,7 +20,9 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
 
-  const data = fs.readFileSync('/github/workspace/README.md', 'utf8');
+  console.log(process.env.GITHUB_WORKSPACE);
+
+  const data = fs.readFileSync(process.env.GITHUB_WORKSPACE + '/README.md', 'utf8');
   console.log("README content:");
   console.log(data);
 } catch (error) {
